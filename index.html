@@ -292,14 +292,40 @@ van discriminatie op de arbeidsmarkt.
 
 <section class="newsletter">
   <h2>Blijf op de hoogte</h2>
-  <p>
-    Wilt u bericht ontvangen zodra het boek verschijnt?
+
+  <form action="https://formspree.io/f/xgogezao" method="POST">
+
+    <p>Wilt u bericht ontvangen zodra het boek verschijnt?</p>
+
+    <label for="name">Uw naam</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Uw e-mailadres</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Telefoonnummer (optioneel)</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <label for="interest">Waarvoor meldt u zich aan?</label><br>
+    <select id="interest" name="interest" required>
+      <option value="interesse">Ik heb interesse</option>
+      <option value="voorbestelling">Ik wil een voorbestelling doen</option>
+    </select><br><br>
+
+    <label for="quantity">Aantal boeken (alleen bij voorbestelling)</label><br>
+    <input type="number" id="quantity" name="quantity" min="1"><br><br>
+
+    <label for="message">Uw bericht</label><br>
+    <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+    <button type="submit">Verstuur</button>
+
+  </form>
+
+  <p class="confirmation-text">
+    Zodra u het formulier verstuurt, ontvangt u een bevestiging per e-mail.
   </p>
-  <input type="email" placeholder="Uw e-mailadres">
-  <br>
-  <button onclick="window.location.href='mailto:margreetboeren1@gmail.com';">
-    Houd mij op de hoogte
-  </button>
+
 </section>
 
 <section class="section" id="contact">
